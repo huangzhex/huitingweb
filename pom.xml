@@ -30,44 +30,16 @@
     </properties>
     <!--模块-->
     <modules>
+        <!--网站-->
         <module>web</module>
+        <!--微信-->
         <module>wx</module>
+        <!--公用-->
         <module>common</module>
+        <!--数据-->
+        <module>data</module>
     </modules>
     <dependencies>
-        <!--阿里 Druid Spring Boot Starter依赖-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-        <!-- DB -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
-        <!--MySQL JDBC驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <!--MyBatis 及 插件依赖 -->
-        <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
         <!--test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -98,6 +70,11 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${spring-boot-mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>persistence-api</artifactId>
+                <version>1.0</version>
             </dependency>
             <!--spring cloud-->
             <dependency>
