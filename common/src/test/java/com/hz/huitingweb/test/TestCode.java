@@ -17,6 +17,15 @@ public class TestCode {
     ICodeGenerator codeGenerator;
     @Test
     public void createCode(){
-        codeGenerator.genCode("tbi_order","TbiOrder");
+//        codeGenerator.genCode("hting_item","HtingItem");
+//        codeGenerator.genCode("hting_item_set","HtingItemSet");
+//        codeGenerator.genCode("hting_itemlable","HtingItemLable");
+//        codeGenerator.genCode("hting_lable","HtingLable");
+//        codeGenerator.genCode("hting_menu","HtingMenu");
+//        codeGenerator.genCode("hting_msg","HtingMsg");
+//        codeGenerator.genCode("hting_set","HtingSet");
+//        codeGenerator.genCode("hting_user","HtingUser");
+//        codeGenerator.genCode("hting_yun_path","HtingYunPath");
+//        codeGenerator.genCode("huiting_wx_user","HtingWxUser");
     }
 }
