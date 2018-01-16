@@ -2,8 +2,10 @@ package com.hz.huitingweb.wx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
+@EnableFeignClients
 @SpringBootApplication
 @ComponentScan({"com.hz.huitingweb.common","com.hz.huitingweb.wx"})
 public class WxApplication {

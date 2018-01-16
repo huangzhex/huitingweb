@@ -2,6 +2,7 @@ package com.hz.huitingweb.data.base;
 
 import com.github.pagehelper.PageInfo;
 import com.hz.huitingweb.common.base.BaseBean;
+import com.hz.huitingweb.common.model.Result;
 import com.hz.huitingweb.data.constants.ResultEnum;
 
 /**

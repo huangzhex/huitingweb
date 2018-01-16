@@ -55,10 +55,6 @@
             <groupId>tk.mybatis</groupId>
             <artifactId>mapper</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-        </dependency>
         <!--代码生成器依赖-->
         <dependency>
             <groupId>org.freemarker</groupId>

@@ -1,4 +1,4 @@
-package com.hz.huitingweb.data.configuration;
+package com.hz.huitingweb.wx.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +23,7 @@ public class Swagger2Configuration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.hz.huitingweb.data.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.hz.huitingweb.wx.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -33,7 +33,7 @@ public class Swagger2Configuration {
                 .title("慧听网RESTful APIs")
                 .description("")
                 .termsOfServiceUrl("http://123.206.8.74:801/")
-                .contact(new Contact("慧听网","",""))
+                .contact(new Contact("慧听网","http://123.206.8.74:801/",""))
                 .version("1.0")
                 .build();
     }

@@ -1,4 +1,4 @@
-package com.hz.huitingweb.data.base;
+package com.hz.huitingweb.common.model;
 
 /**
  * Created by huangzhe on 2018/1/16.
