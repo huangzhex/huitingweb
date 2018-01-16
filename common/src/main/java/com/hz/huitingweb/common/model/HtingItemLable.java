@@ -1,9 +1,11 @@
 package com.hz.huitingweb.common.model;
 
+import com.hz.huitingweb.common.base.BaseBean;
+
 import javax.persistence.*;
 
 @Table(name = "hting_itemlable")
-public class HtingItemLable {
+public class HtingItemLable extends BaseBean {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

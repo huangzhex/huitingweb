@@ -1,9 +1,11 @@
 package com.hz.huitingweb.common.model;
 
+import com.hz.huitingweb.common.base.BaseBean;
+
 import javax.persistence.*;
 
 @Table(name = "huiting_wx_user")
-public class HtingWxUser {
+public class HtingWxUser extends BaseBean {
     /**
      * 微信用户id
      */

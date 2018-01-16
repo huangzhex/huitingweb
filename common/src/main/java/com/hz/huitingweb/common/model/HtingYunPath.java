@@ -1,9 +1,11 @@
 package com.hz.huitingweb.common.model;
 
+import com.hz.huitingweb.common.base.BaseBean;
+
 import javax.persistence.*;
 
 @Table(name = "hting_yun_path")
-public class HtingYunPath {
+public class HtingYunPath extends BaseBean {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
