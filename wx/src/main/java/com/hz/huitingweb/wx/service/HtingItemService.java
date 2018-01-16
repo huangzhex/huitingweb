@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by huangzhe on 2018/1/16.
  */
-@FeignClient(name = "huitingweb-data", url = "http://localhost:801")
+@FeignClient(name = "huitingweb-data")
 public interface HtingItemService {
     @RequestMapping(value = "/hting/item", method = RequestMethod.GET)
     Result<PageInfo> list(@RequestParam("page") Integer page);
