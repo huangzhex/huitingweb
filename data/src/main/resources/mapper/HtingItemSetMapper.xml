@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hz.huitingweb.data.dao.HtingItemSetMapper">
+  <resultMap id="BaseResultMap" type="com.hz.huitingweb.common.model.HtingItemSet">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="item_id" jdbcType="INTEGER" property="itemId" />
+    <result column="index_no" jdbcType="INTEGER" property="indexNo" />
+    <result column="down_url" jdbcType="VARCHAR" property="downUrl" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+  </resultMap>
+</mapper>

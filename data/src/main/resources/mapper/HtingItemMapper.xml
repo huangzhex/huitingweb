@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hz.huitingweb.data.dao.HtingItemMapper">
+  <resultMap id="BaseResultMap" type="com.hz.huitingweb.common.model.HtingItem">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="reader" jdbcType="VARCHAR" property="reader" />
+    <result column="baidu_url" jdbcType="VARCHAR" property="baiduUrl" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="home_show" jdbcType="INTEGER" property="homeShow" />
+    <result column="order_index" jdbcType="INTEGER" property="orderIndex" />
+    <result column="menu_id" jdbcType="INTEGER" property="menuId" />
+    <result column="menu_order_index" jdbcType="INTEGER" property="menuOrderIndex" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="pwd" jdbcType="VARCHAR" property="pwd" />
+    <result column="weburl" jdbcType="VARCHAR" property="weburl" />
+    <result column="isend" jdbcType="VARCHAR" property="isend" />
+    <result column="scount" jdbcType="INTEGER" property="scount" />
+    <result column="lable_id" jdbcType="INTEGER" property="lableId" />
+    <result column="context" jdbcType="LONGVARCHAR" property="context" />
+  </resultMap>
+</mapper>
