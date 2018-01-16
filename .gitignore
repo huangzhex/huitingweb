@@ -26,3 +26,6 @@ hs_err_pid*
 .idea
 *.iml
 *.yml
+.mvn
+*.mvnw
+*.mvnw.cmd
