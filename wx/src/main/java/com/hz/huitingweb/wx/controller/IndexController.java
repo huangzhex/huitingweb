@@ -3,6 +3,7 @@ package com.hz.huitingweb.wx.controller;
 import com.hz.huitingweb.common.model.HtingMenu;
 import com.hz.huitingweb.common.util.Digests;
 import com.hz.huitingweb.common.util.SHA1;
+import com.hz.huitingweb.wx.service.WechatService;
 import com.hz.huitingweb.wx.service.WxService;
 import com.hz.huitingweb.wx.util.WxUtil;
 import org.slf4j.Logger;
@@ -11,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,6 +34,8 @@ public class IndexController {
 
     @Autowired
     private WxService wxService;
+    @Autowired
+    private WechatService wechatService;
 
     @GetMapping("/")
     @ResponseBody
@@ -58,4 +64,20 @@ public class IndexController {
     public String token() {
         return wxService.token("client_credential", appid, secret);
     }
+
+    @PostMapping("/wx")
+    @ResponseBody
+    public void wxMsg(HttpServletRequest request, HttpServletResponse response){
+        try {
+            request.setCharacterEncoding("UTF-8");
+            response.setCharacterEncoding("UTF-8");
+            PrintWriter out=response.getWriter();
+            String responseMessage = wechatService.processRequest(request);
+            out.print(responseMessage);
+            out.flush();
+        }catch (Exception ex){
+            logger.error(ex.getMessage(),ex);
+        }
+    }
+
 }
